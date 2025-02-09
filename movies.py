@@ -60,7 +60,7 @@ cast_list = df_filtered["cast"].unique().tolist()
 user_genre = st.selectbox("Select Genre:", genres_list, index=0 if genres_list else None)
 user_cast = st.selectbox("Select Cast:", cast_list, index=0 if cast_list else None)
 
-# index =9 selects the first available option in the dropdown
+# index=0 selects the first available option in the dropdown
 
 def recommend_shows(user_genre, user_cast):
     # Check if user inputs exist in the trained LabelEncoders
